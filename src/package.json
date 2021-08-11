@@ -6,7 +6,7 @@
         "name": "Carlos Amores"
     },
     "dependencies": {
-        "discord.js": "^12.5.3",
+        "discord.js": "^13.0.1",
         "express": "^4.17.1",
         "express-validator": "^6.12.1",
         "fs-readdir-recursive": "^1.1.0",
@@ -14,7 +14,10 @@
         "mysql2": "^2.2.5",
         "reflect-metadata": "^0.1.13",
         "sequelize": "6.6.2",
-        "sequelize-typescript": "^2.1.0"
+        "sequelize-typescript": "^2.1.0",
+        "zlib-sync": "^0.1.7",
+        "bufferutil": "^4.0.3",
+        "utf-8-validate": "^5.0.5"
     },
     "devDependencies": {
         "@types/fs-readdir-recursive": "^1.0.0",
