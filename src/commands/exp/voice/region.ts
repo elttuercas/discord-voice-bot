@@ -1,6 +1,6 @@
 import * as Discord            from 'discord.js';
-import CommandHelpData         from '../../types/CommandHelpData';
-import {TemporaryVoiceChannel} from '../../models/TemporaryVoiceChannel';
+import CommandHelpData         from '../../../types/CommandHelpData';
+import {TemporaryVoiceChannel} from '../../../models/TemporaryVoiceChannel';
 
 /**
  * Set or display the voice channel's current region.
@@ -48,7 +48,7 @@ export async function run() : Promise<void>
             }
             else
             {
-                vc.setRTCRegion(this.arguments[0])
+                vc.setRTCRegion(this.arguments[0].toLowerCase())
                     .then(() =>
                     {
                         this.message.reply('Region changed successfully.').catch(console.error);
@@ -72,6 +72,6 @@ export function help() : CommandHelpData
     return {
         commandName        : '[EXPERIMENTAL] Voice Region',
         commandDescription : 'Display the current region or set the channel\'s region',
-        commandUsage       : '.voice.region [NEW REGION]'
+        commandUsage : '.exp.voice.region [NEW REGION]'
     };
 }
